@@ -1,7 +1,7 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { FaReact } from 'react-icons/fa';
 
-const Course = ({ href, name }) => {
+const Course = ({ name }) => {
   return (
     <Box
       borderRadius='lg'
