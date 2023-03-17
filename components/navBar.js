@@ -115,10 +115,7 @@ const NavBar = (props) => {
                 <MenuItem as={MenuLink} href='/'>
                   Courses
                 </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href='https://github.com/gaeeeguri/2023-mop-live-coding'
-                >
+                <MenuItem as={Link} href='https://github.com/gaeeeguri/mop-dev'>
                   View Source
                 </MenuItem>
               </MenuList>
