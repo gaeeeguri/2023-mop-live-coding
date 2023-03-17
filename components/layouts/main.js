@@ -10,7 +10,7 @@ const Main = ({ children, router }) => {
         <meta name='description' content='2023 MOP Live Coding' />
         <meta name='author' content='Seongjin Park' />
         <meta name='author' content='gaeeeguri' />
-        <title>MOP Dev Courses - Homepage</title>
+        <title>MOP:DEV</title>
       </Head>
 
       <NavBar path={router.asPath} />

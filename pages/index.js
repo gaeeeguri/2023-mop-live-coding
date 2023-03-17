@@ -8,13 +8,14 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import Section from '@/components/section';
+import NextLink from 'next/link';
 
 const Home = () => {
-  const property = {
+  const reactCourse = {
     imageUrl:
       'https://www.mobinius.com/wp-content/uploads/2020/02/reactjs-2.png',
     imageAlt: 'Rear view of modern home with pool',
-    title: 'Counting Numbers',
+    title: 'Counting Numbers: 숫자 세기',
   };
 
   return (
@@ -53,8 +54,8 @@ const Home = () => {
           direction={{ base: 'row', sm: 'column' }}
         >
           <Image
-            src={property.imageUrl}
-            alt={property.imageAlt}
+            src={reactCourse.imageUrl}
+            alt={reactCourse.imageAlt}
             objectFit='cover'
             maxW={{ base: '100%', sm: '40%' }}
           />
@@ -92,15 +93,18 @@ const Home = () => {
                 lineHeight='tight'
                 noOfLines={1}
               >
-                {property.title}
+                {reactCourse.title}
               </Box>
             </Box>
             <Box display={'flex'} justifyContent={'flex-end'}>
               <Button
                 background={useColorModeValue('#f0e7db', '#202023')}
                 mr={0}
+                size='sm'
+                as={NextLink}
+                href='/course/counting-numbers'
               >
-                Get Started
+                Go to Course
               </Button>
             </Box>
           </Box>

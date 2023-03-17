@@ -80,9 +80,9 @@ const NavBar = (props) => {
           flexGrow={1}
           mt-={{ base: 4, md: 0 }}
         >
-          <LinkItem href='/about' path={path}>
-            About
-          </LinkItem>
+          {/*<LinkItem href='/about' path={path}>*/}
+          {/*  About*/}
+          {/*</LinkItem>*/}
           <LinkItem
             target='_blank'
             href='https://github.com/gaeeeguri/2023-mop-live-coding'
@@ -109,9 +109,9 @@ const NavBar = (props) => {
                 aria-label='Options'
               ></MenuButton>
               <MenuList>
-                <MenuItem as={MenuLink} href='/about'>
-                  About
-                </MenuItem>
+                {/*<MenuItem as={MenuLink} href='/about'>*/}
+                {/*  About*/}
+                {/*</MenuItem>*/}
                 <MenuItem as={MenuLink} href='/'>
                   Courses
                 </MenuItem>
