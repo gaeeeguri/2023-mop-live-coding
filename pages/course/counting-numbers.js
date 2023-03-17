@@ -118,6 +118,8 @@ const ReactCourse = () => {
           lineHeight='tight'
           noOfLines={1}
           p={3}
+          flexGrow={1}
+          display='flex'
         >
           내용: 여러 기술들을 이용해 숫자를 셉니다!
         </Box>
