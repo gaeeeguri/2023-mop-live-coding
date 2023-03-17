@@ -49,7 +49,7 @@ const ReactCourse = () => {
           <Box mt={'1'}>
             <UnorderedList spacing={3}>
               <ListItem>HTML, CSS가 무엇인지 알고,</ListItem>
-              <ListItem>JS가 무엇인지 아는...</ListItem>
+              <ListItem>JavaScript가 무엇인지 아는...</ListItem>
               <ListItem>MOP 부원!</ListItem>
             </UnorderedList>
           </Box>
