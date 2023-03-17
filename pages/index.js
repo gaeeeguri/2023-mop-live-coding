@@ -12,9 +12,8 @@ import NextLink from 'next/link';
 
 const Home = () => {
   const reactCourse = {
-    imageUrl:
-      'https://www.mobinius.com/wp-content/uploads/2020/02/reactjs-2.png',
-    imageAlt: 'Rear view of modern home with pool',
+    image: '../public/reactjs.png',
+    imageAlt: 'React Course Image',
     title: 'Counting Numbers: 숫자 세기',
   };
 
@@ -54,7 +53,7 @@ const Home = () => {
           direction={{ base: 'row', sm: 'column' }}
         >
           <Image
-            src={reactCourse.imageUrl}
+            src='reactjs.png'
             alt={reactCourse.imageAlt}
             objectFit='cover'
             maxW={{ base: '100%', sm: '40%' }}
