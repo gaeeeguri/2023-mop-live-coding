@@ -148,6 +148,7 @@ const ReactCourse = () => {
           mt={2}
           as={NextLink}
           href='https://lja8av1pirf.typeform.com/to/BbxVJZsV'
+          target='_blank'
         >
           신청하기
         </Button>
