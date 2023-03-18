@@ -7,10 +7,12 @@ const Topic = ({ week, name, children }) => {
       bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       p={4}
     >
-      <Box fontWeight='bold' p={2}>
+      <Box fontWeight='bold' p={2} fontSize={{ base: 'sm', md: 'lg' }}>
         {week}. {name}
       </Box>
-      <Box pl={3}>{children}</Box>
+      <Box pl={3} fontSize={{ base: 'xs', md: 'sm' }}>
+        {children}
+      </Box>
     </Box>
   );
 };
