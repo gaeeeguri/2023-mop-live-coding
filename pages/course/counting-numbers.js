@@ -10,7 +10,6 @@ import {
 } from '@chakra-ui/react';
 import Section from '@/components/section';
 import { SiCss3, SiHtml5, SiJavascript, SiReact } from 'react-icons/si';
-import NextLink from 'next/link';
 import Topic from '@/components/topic';
 
 const ReactCourse = () => {
@@ -148,9 +147,7 @@ const ReactCourse = () => {
           colorScheme={useColorModeValue('orange', 'purple')}
           w='100%'
           mt={2}
-          as={NextLink}
-          href='https://lja8av1pirf.typeform.com/to/BbxVJZsV'
-          target='_blank'
+          isDisabled={true}
         >
           신청하기
         </Button>

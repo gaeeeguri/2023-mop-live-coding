@@ -1,4 +1,3 @@
-
 module.exports = {
   env: {
     browser: true,
@@ -8,8 +7,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
-    'next/core-web-vitals'
+    'next/core-web-vitals',
+    'prettier'
   ],
   globals: {
     Atomics: 'readonly',
@@ -48,7 +47,5 @@ module.exports = {
     'semi': ['error', 'always'],
 
     'arrow-body-style': 'off',
-
-    'prettier/prettier': ['error', { 'singleQuote': true, 'endOfLine': 'crlf' }]
   }
 };
