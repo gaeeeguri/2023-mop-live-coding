@@ -1,13 +1,10 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Container,
-  Heading,
-  Image,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react';
+import CourseTag from '@/components/ui/courseCard/atoms/courseTag';
+import Difficulty from '@/components/ui/courseCard/atoms/difficulty';
+import DashboardButton from '@/components/ui/courseCard/atoms/dashboardButton';
+import DetailButton from '@/components/ui/courseCard/atoms/detailButton';
+import CourseTitle from '@/components/ui/courseCard/atoms/courseTitle';
+import CourseImage from '@/components/ui/courseCard/atoms/courseImage';
 
 const Home = () => {
   const reactCourse = {
@@ -47,13 +44,7 @@ const Home = () => {
         background={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         direction={{ base: 'row', sm: 'column' }}
       >
-        <Image
-          src='reactjs.png'
-          alt={reactCourse.imageAlt}
-          objectFit='cover'
-          maxW={{ base: '100%', sm: '40%' }}
-        />
-
+        <CourseImage imageSrc='reactjs.png' imageAlt={reactCourse.imageAlt} />
         <Box
           p='4'
           display='flex'
@@ -63,56 +54,15 @@ const Home = () => {
         >
           <Box>
             <Box display='flex' alignItems='baseline'>
-              <Badge borderRadius='full' px='2' colorScheme='teal' mr={1}>
-                Web
-              </Badge>
-              <Badge borderRadius='full' px='2' colorScheme='purple'>
-                JS
-              </Badge>
-              <Box
-                color='gray.500'
-                fontWeight='semibold'
-                letterSpacing='wide'
-                fontSize='xs'
-                textTransform='uppercase'
-                ml='2'
-              >
-                for beginners
-              </Box>
+              <CourseTag>web</CourseTag>
+              <CourseTag>js</CourseTag>
+              <Difficulty level='easy' />
             </Box>
-            <Box
-              mt='1'
-              fontWeight='semibold'
-              as='h4'
-              lineHeight='tight'
-              noOfLines={1}
-            >
-              {reactCourse.title}
-            </Box>
+            <CourseTitle>{reactCourse.title}</CourseTitle>
           </Box>
           <Box display={'flex'} justifyContent={'flex-end'} mt={3}>
-            <Button
-              // background={useColorModeValue('#f0e7db', '#202023')}
-              mr={0}
-              size={{ base: 'sm', md: 'md' }}
-              as={NextLink}
-              href='/course/counting-numbers'
-              ml={2}
-              variant='ghost'
-              fontWeight='600'
-            >
-              Detail
-            </Button>
-            <Button
-              background={useColorModeValue('#f0e7db', '#202023')}
-              mr={0}
-              ml={2}
-              size={{ base: 'sm', md: 'md' }}
-              as={NextLink}
-              href='/course/counting-numbers'
-            >
-              Dashboard
-            </Button>
+            <DetailButton detailLink='/course/counting-numbers' />
+            <DashboardButton dashboardLink='/course/counting-numbers' />
           </Box>
         </Box>
       </Box>
