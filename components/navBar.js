@@ -85,7 +85,7 @@ const NavBar = (props) => {
           {/*</LinkItem>*/}
           <LinkItem
             target='_blank'
-            href='https://github.com/gaeeeguri/2023-mop-live-coding'
+            href='https://github.com/gaeeeguri/mop-dev'
             path={path}
             display='inline-flex'
             alignItems='center'
