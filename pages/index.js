@@ -26,7 +26,7 @@ const Home = () => (
     <CourseCard
       tags={['web', 'js']}
       level='easy'
-      dashboardLink='/course/counting-numbers'
+      dashboardLink='/course/counting-numbers/detail'
       detailLink='/course/counting-numbers'
       imageSrc='reactjs.png'
       imageAlt='React Course Image'
