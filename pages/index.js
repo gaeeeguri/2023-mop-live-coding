@@ -1,10 +1,6 @@
 import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react';
-import CourseTag from '@/components/ui/courseCard/atoms/courseTag';
-import Difficulty from '@/components/ui/courseCard/atoms/difficulty';
-import DashboardButton from '@/components/ui/courseCard/atoms/dashboardButton';
-import DetailButton from '@/components/ui/courseCard/atoms/detailButton';
-import CourseTitle from '@/components/ui/courseCard/atoms/courseTitle';
 import CourseImage from '@/components/ui/courseCard/atoms/courseImage';
+import CourseBody from '@/components/ui/courseCard/organisms/courseBody';
 
 const Home = () => {
   const reactCourse = {
@@ -45,26 +41,14 @@ const Home = () => {
         direction={{ base: 'row', sm: 'column' }}
       >
         <CourseImage imageSrc='reactjs.png' imageAlt={reactCourse.imageAlt} />
-        <Box
-          p='4'
-          display='flex'
-          flexDirection='column'
-          justifyContent='space-between'
-          flexGrow={1}
+        <CourseBody
+          tags={['web', 'js']}
+          level='easy'
+          dashboardLink='/course/counting-numbers'
+          detailLink='/course/counting-numbers'
         >
-          <Box>
-            <Box display='flex' alignItems='baseline'>
-              <CourseTag>web</CourseTag>
-              <CourseTag>js</CourseTag>
-              <Difficulty level='easy' />
-            </Box>
-            <CourseTitle>{reactCourse.title}</CourseTitle>
-          </Box>
-          <Box display={'flex'} justifyContent={'flex-end'} mt={3}>
-            <DetailButton detailLink='/course/counting-numbers' />
-            <DashboardButton dashboardLink='/course/counting-numbers' />
-          </Box>
-        </Box>
+          {reactCourse.title}
+        </CourseBody>
       </Box>
     </Container>
   );
