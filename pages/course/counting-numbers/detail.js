@@ -13,6 +13,7 @@ import {
   UnorderedList,
   useColorModeValue,
 } from '@chakra-ui/react';
+import MaterialBadge from '@/components/ui/courseTimeTable/atoms/materialBadge';
 
 const ReactCourseDetail = () => {
   return (
@@ -60,6 +61,7 @@ const ReactCourseDetail = () => {
         <Table
           variant='simple'
           size={{ base: 'md', md: 'lg' }}
+          fontSize={{ base: '0.7em', sm: '0.8em', md: '1em' }}
           colorScheme={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
           <Thead>
@@ -73,7 +75,34 @@ const ReactCourseDetail = () => {
             <Tr>
               <Td>03.22</Td>
               <Td>Vanilla JS로 숫자 세기</Td>
-              <Td isNumeric>TBD</Td>
+              <Td isNumeric>
+                <MaterialBadge
+                  title='Codes'
+                  colorScheme='blue'
+                  goTo='https://github.com/mop-gist/counting-numbers/tree/vanilaJS'
+                />
+                <MaterialBadge
+                  title='Slides'
+                  colorScheme='purple'
+                  goTo='https://docs.google.com/presentation/d/1btJaOyRV6ZIKi0sOMz9af4eeiBAJms_3UvtzJVDZPOo/edit?usp=sharing'
+                />
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>03.29</Td>
+              <Td>React로 숫자 세기</Td>
+              <Td isNumeric>
+                <MaterialBadge
+                  title='Codes'
+                  colorScheme='blue'
+                  goTo='https://github.com/mop-gist/counting-numbers/tree/vanilaJS'
+                />
+                <MaterialBadge
+                  title='Slides'
+                  colorScheme='purple'
+                  goTo='https://docs.google.com/presentation/d/1Q4gkEWRYbhIebGjWEwsR_UmGCkqlnFttZ3_spd6iw-g/edit?usp=sharing'
+                />
+              </Td>
             </Tr>
           </Tbody>
         </Table>
