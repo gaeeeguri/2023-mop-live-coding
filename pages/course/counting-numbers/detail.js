@@ -95,7 +95,7 @@ const ReactCourseDetail = () => {
                 <MaterialBadge
                   title='Codes'
                   colorScheme='blue'
-                  goTo='https://github.com/mop-gist/counting-numbers/tree/vanilaJS'
+                  goTo='https://github.com/mop-gist/counting-numbers/tree/simple-react'
                 />
                 <MaterialBadge
                   title='Slides'
