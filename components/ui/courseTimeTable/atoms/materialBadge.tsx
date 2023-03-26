@@ -17,6 +17,7 @@ const MaterialBadge = ({ title, colorScheme, goTo }: MaterialBadgeProps) => (
     size='sm'
     as={nextLink}
     href={goTo}
+    target='_blank'
   >
     {title}
   </Badge>
