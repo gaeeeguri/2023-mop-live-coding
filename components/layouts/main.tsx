@@ -2,8 +2,15 @@ import { Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
 import NavBar from '../navBar/navBar';
 import Footer from '../footer/footer';
+import React from 'react';
+import { Router } from 'next/router';
 
-const Main = ({ children, router }) => {
+export interface MainProps {
+  children: React.ReactNode;
+  router: Router;
+}
+
+const Main = ({ children, router }: MainProps) => {
   return (
     <Box as='main' pb={8}>
       <Head>
