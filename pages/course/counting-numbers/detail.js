@@ -2,7 +2,6 @@ import {
   Box,
   Container,
   Heading,
-  ListItem,
   Table,
   TableContainer,
   Tbody,
@@ -10,10 +9,10 @@ import {
   Th,
   Thead,
   Tr,
-  UnorderedList,
   useColorModeValue,
 } from '@chakra-ui/react';
 import MaterialBadge from '@/components/ui/courseTimeTable/atoms/materialBadge';
+import ListContent from '@/components/ui/contents/molecules/listContent';
 
 const ReactCourseDetail = () => {
   return (
@@ -26,21 +25,13 @@ const ReactCourseDetail = () => {
         </Box>
       </Box>
 
-      <Box
-        borderRadius='lg'
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        p={4}
-        mt={6}
-        mb={4}
-      >
-        <Box mt={'1'}>
-          <UnorderedList spacing={3}>
-            <ListItem>매주 수요일 오후 10시</ListItem>
-            <ListItem>MOP 디스코드 또는 유튜브</ListItem>
-            <ListItem>30분 정도의 라이브코딩을 두 번 진행</ListItem>
-          </UnorderedList>
-        </Box>
-      </Box>
+      <ListContent
+        contents={[
+          '매주 수요일 오후 10시',
+          'MOP 디스코드 또는 유튜브',
+          '30분 정도의 라이브코딩을 두 번 진행',
+        ]}
+      />
 
       <Box
         mt='1'

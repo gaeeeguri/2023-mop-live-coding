@@ -1,7 +1,7 @@
-import Layout from '@/components/layouts/main';
-import Fonts from '@/components/fonts';
+import Main from '../components/layouts/main';
+import Fonts from '../components/fonts';
 import { AnimatePresence } from 'framer-motion';
-import Chakra from '@/components/chakra';
+import Chakra from '../components/chakra';
 import { Analytics } from '@vercel/analytics/react';
 
 if (typeof window !== 'undefined') {
@@ -12,7 +12,7 @@ const App = ({ Component, pageProps, router }) => {
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
-      <Layout router={router}>
+      <Main router={router}>
         <AnimatePresence
           mode='wait'
           initial={true}
@@ -25,7 +25,7 @@ const App = ({ Component, pageProps, router }) => {
           <Component {...pageProps} key={router.route} />
           <Analytics />
         </AnimatePresence>
-      </Layout>
+      </Main>
     </Chakra>
   );
 };

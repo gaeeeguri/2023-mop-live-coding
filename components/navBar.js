@@ -12,11 +12,11 @@ import {
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react';
-import Logo from '@/components/logo';
+import Logo from './logo';
 
 import NextLink from 'next/link';
 import { FaGithub } from 'react-icons/fa';
-import ThemeToggleButton from '@/components/ThemeToggleButton';
+import ThemeToggleButton from './ThemeToggleButton';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { forwardRef } from 'react';
 
@@ -95,6 +95,28 @@ const NavBar = (props) => {
             <FaGithub />
             Source
           </LinkItem>
+          {/*<LinkItem*/}
+          {/*  target='_blank'*/}
+          {/*  href='/study'*/}
+          {/*  path={path}*/}
+          {/*  display='inline-flex'*/}
+          {/*  alignItems='center'*/}
+          {/*  style={{ gap: 4 }}*/}
+          {/*  pl={2}*/}
+          {/*>*/}
+          {/*  Study*/}
+          {/*</LinkItem>*/}
+          {/*<LinkItem*/}
+          {/*  target='_blank'*/}
+          {/*  href='/'*/}
+          {/*  path={path}*/}
+          {/*  display='inline-flex'*/}
+          {/*  alignItems='center'*/}
+          {/*  style={{ gap: 4 }}*/}
+          {/*  pl={2}*/}
+          {/*>*/}
+          {/*  Course*/}
+          {/*</LinkItem>*/}
         </Stack>
 
         <Box flex={1} align='right'>

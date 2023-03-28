@@ -20,7 +20,7 @@ module.exports = {
   overrides: [],
   plugins: ['react', 'jsx-a11y'],
   rules: {
-    'indent': ['error', 2],
+    // 'indent': ['error', 2],
     'no-trailing-spaces': 'error',
     'curly': 'error',
     'brace-style': 'error',
