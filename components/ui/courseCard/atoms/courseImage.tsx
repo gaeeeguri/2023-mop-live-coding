@@ -1,6 +1,11 @@
 import { Image } from '@chakra-ui/react';
 
-const CourseImage = ({ imageSrc, imageAlt }) => (
+export interface CourseImageProps {
+  imageSrc: string;
+  imageAlt: string;
+}
+
+const CourseImage = ({ imageSrc, imageAlt }: CourseImageProps) => (
   <Image
     src={imageSrc}
     alt={imageAlt}

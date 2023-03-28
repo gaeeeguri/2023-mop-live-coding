@@ -1,7 +1,11 @@
 import { Button, useColorModeValue } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
-const DashboardButton = ({ dashboardLink }) => (
+export interface DashboardButtonProps {
+  dashboardLink: string;
+}
+
+const DashboardButton = ({ dashboardLink }: DashboardButtonProps) => (
   <Button
     background={useColorModeValue('#f0e7db', '#202023')}
     mr={0}

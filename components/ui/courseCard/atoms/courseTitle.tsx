@@ -1,8 +1,12 @@
 import { Box } from '@chakra-ui/react';
 
-const CourseTitle = ({ children }) => (
+export interface CourseTitleProps {
+  courseTitle: string;
+}
+
+const CourseTitle = ({ courseTitle }: CourseTitleProps) => (
   <Box mt='1' fontWeight='semibold' as='h4' lineHeight='tight' noOfLines={1}>
-    {children}
+    {courseTitle}
   </Box>
 );
 

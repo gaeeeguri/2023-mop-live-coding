@@ -1,7 +1,12 @@
 import NextLink from 'next/link';
 import { Button } from '@chakra-ui/react';
 
-const DetailButton = ({ detailLink }) => (
+// TODO: type safety of link props
+export interface DetailButtonProps {
+  detailLink: string;
+}
+
+const DetailButton = ({ detailLink }: DetailButtonProps) => (
   <Button
     mr={0}
     size={{ base: 'sm', md: 'md' }}

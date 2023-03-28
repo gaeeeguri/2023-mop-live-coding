@@ -1,6 +1,14 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
-import CourseImage from '@/components/ui/courseCard/atoms/courseImage';
-import CourseBody from '@/components/ui/courseCard/organisms/courseBody';
+import CourseImage, {
+  CourseImageProps,
+} from '@/components/ui/courseCard/atoms/courseImage';
+import CourseCardBody, {
+  CourseCardBodyProps,
+} from '@/components/ui/courseCard/organisms/courseCardBody';
+
+export interface CourseCardProps
+  extends CourseImageProps,
+    CourseCardBodyProps {}
 
 const CourseCard = ({
   imageSrc,
@@ -9,8 +17,8 @@ const CourseCard = ({
   level,
   dashboardLink,
   detailLink,
-  children,
-}) => (
+  courseTitle,
+}: CourseCardProps) => (
   <Box
     maxW='container.md'
     borderWidth='1px'
@@ -18,18 +26,17 @@ const CourseCard = ({
     overflow='hidden'
     display={{ base: 'block', sm: 'flex' }}
     background={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-    direction={{ base: 'row', sm: 'column' }}
+    flexDirection={{ base: 'row', sm: 'column' }}
     mb={4}
   >
     <CourseImage imageSrc={imageSrc} imageAlt={imageAlt} />
-    <CourseBody
+    <CourseCardBody
       tags={tags}
       level={level}
       dashboardLink={dashboardLink}
       detailLink={detailLink}
-    >
-      {children}
-    </CourseBody>
+      courseTitle={courseTitle}
+    />
   </Box>
 );
 

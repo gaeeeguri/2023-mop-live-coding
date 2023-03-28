@@ -1,10 +1,18 @@
 import { Box } from '@chakra-ui/react';
 
-const levels = {
+export type Level = 'easy' | 'intermediate' | 'hard';
+
+const levels: Record<Level, string> = {
   easy: 'beginners',
+  intermediate: '',
+  hard: '',
 };
 
-const Difficulty = ({ level }) => (
+export interface DifficultyProps {
+  level: Level;
+}
+
+const Difficulty = ({ level }: DifficultyProps) => (
   <Box
     color='gray.500'
     fontWeight='semibold'
