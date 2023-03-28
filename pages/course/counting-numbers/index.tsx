@@ -1,13 +1,15 @@
 import { Button, Container, useColorModeValue } from '@chakra-ui/react';
-import ListContent from '@/components/courseDetail/molecules/listContent';
-import SubTitle from '@/components/courseDetail/atoms/subTitle';
-import TechContent from '@/components/courseDetail/molecules/techContent';
-import Title from '@/components/courseDetail/atoms/title';
-import TopicContent from '@/components/courseDetail/molecules/topicContent';
+import ListContent from '@/components/course/courseDetail/molecules/listContent';
+import SubTitle from '@/components/course/courseDetail/atoms/subTitle';
+import TechContent from '@/components/course/courseDetail/molecules/techContent';
+import Title from '@/components/course/courseDetail/atoms/title';
+import TopicContent, {
+  Topic,
+} from '@/components/course/courseDetail/molecules/topicContent';
 
 // TODO: refactor variable names !!!!!!
 
-const topics = [
+const topics: Topic[] = [
   {
     topicTitle: 'VanilaJS로 간단한 숫자 세기',
     topicDescription:

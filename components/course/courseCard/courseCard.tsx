@@ -1,10 +1,10 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import CourseImage, {
   CourseImageProps,
-} from '@/components/courseCard/atoms/courseImage';
+} from '@/components/course/courseCard/atoms/courseImage';
 import CourseCardBody, {
   CourseCardBodyProps,
-} from '@/components/courseCard/organisms/courseCardBody';
+} from '@/components/course/courseCard/organisms/courseCardBody';
 
 export interface CourseCardProps
   extends CourseImageProps,

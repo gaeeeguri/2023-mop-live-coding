@@ -1,5 +1,5 @@
 import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react';
-import CourseCard from '@/components/courseCard/courseCard';
+import CourseCard from '@/components/course/courseCard/courseCard';
 
 const Home = () => (
   <Container mb={4}>

@@ -1,7 +1,7 @@
-import CourseTag, { Tag } from '@/components/courseCard/atoms/courseTag';
+import CourseTag, { Tag } from '@/components/course/courseCard/atoms/courseTag';
 import Difficulty, {
   DifficultyProps,
-} from '@/components/courseCard/atoms/difficulty';
+} from '@/components/course/courseCard/atoms/difficulty';
 import { Box } from '@chakra-ui/react';
 
 export interface CourseHeaderProps extends DifficultyProps {

@@ -5,6 +5,7 @@ export interface SubTitleProps {
   name: string;
 }
 
+// TODO: Title, SubTitle, Button 같이 course 이외에도 반복될 수 있는 컴포넌트 분리
 const SubTitle = ({ name }: SubTitleProps) => (
   <Box
     p={3}
