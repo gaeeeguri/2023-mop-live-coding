@@ -1,9 +1,9 @@
 import { Button, Container, useColorModeValue } from '@chakra-ui/react';
-import ListContent from '@/components/ui/contents/molecules/listContent';
-import SubTitle from '@/components/ui/contents/atoms/subTitle';
-import TechContent from '@/components/ui/contents/molecules/techContent';
-import Title from '@/components/ui/contents/atoms/title';
-import TopicContent from '@/components/ui/contents/molecules/topicContent';
+import ListContent from '@/components/courseDetail/molecules/listContent';
+import SubTitle from '@/components/courseDetail/atoms/subTitle';
+import TechContent from '@/components/courseDetail/molecules/techContent';
+import Title from '@/components/courseDetail/atoms/title';
+import TopicContent from '@/components/courseDetail/molecules/topicContent';
 
 // TODO: refactor variable names !!!!!!
 

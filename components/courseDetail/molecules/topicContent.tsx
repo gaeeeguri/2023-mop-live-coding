@@ -1,6 +1,6 @@
 import React from 'react';
 import { SimpleGrid } from '@chakra-ui/react';
-import TopicCard from '@/components/ui/contents/atoms/topicCard';
+import TopicCard from '@/components/courseDetail/atoms/topicCard';
 
 export type Topic = {
   topicTitle: string;

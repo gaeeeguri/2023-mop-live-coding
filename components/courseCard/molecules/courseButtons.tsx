@@ -1,9 +1,9 @@
 import DetailButton, {
   DetailButtonProps,
-} from '@/components/ui/courseCard/atoms/detailButton';
+} from '@/components/courseCard/atoms/detailButton';
 import DashboardButton, {
   DashboardButtonProps,
-} from '@/components/ui/courseCard/atoms/dashboardButton';
+} from '@/components/courseCard/atoms/dashboardButton';
 import { Box } from '@chakra-ui/react';
 
 export interface CourseButtonsProps

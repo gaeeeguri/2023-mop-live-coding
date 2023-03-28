@@ -11,8 +11,8 @@ import {
   Tr,
   useColorModeValue,
 } from '@chakra-ui/react';
-import MaterialBadge from '@/components/ui/courseTimeTable/atoms/materialBadge';
-import ListContent from '@/components/ui/contents/molecules/listContent';
+import MaterialBadge from '@/components/courseTimeTable/atoms/materialBadge';
+import ListContent from '@/components/courseDetail/molecules/listContent';
 
 const ReactCourseDetail = () => {
   return (
