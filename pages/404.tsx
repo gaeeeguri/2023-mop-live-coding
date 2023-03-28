@@ -12,10 +12,12 @@ import NextLink from 'next/link';
 const NotFound = () => {
   return (
     <Container mt={6}>
-      <Heading as='h1'>Page Not Found</Heading>
+      <Heading as='h1' mb={2}>
+        Page Not Found
+      </Heading>
       <Text>The page you&apos;re looking for was not found.</Text>
       <Divider my={6} />
-      <Box my={6} alignContent='center'>
+      <Box my={6} display='flex' justifyContent='center' alignContent='center'>
         <Button
           as={NextLink}
           href='/'
