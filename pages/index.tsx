@@ -1,5 +1,5 @@
 import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react';
-import CourseCard from '@/components/ui/courseCard/courseCard';
+import CourseCard from '@/components/courseCard/courseCard';
 
 const Home = () => (
   <Container mb={4}>
@@ -30,9 +30,8 @@ const Home = () => (
       detailLink='/course/counting-numbers'
       imageSrc='reactjs.png'
       imageAlt='React Course Image'
-    >
-      Counting Numbers: 숫자 세기
-    </CourseCard>
+      courseTitle='Counting Numbers: 숫자 세기'
+    />
   </Container>
 );
 

@@ -1,13 +1,7 @@
 import { Box } from '@chakra-ui/react';
-import CourseHeader, {
-  CourseHeaderProps,
-} from '@/components/courseCard/molecules/courseHeader';
-import CourseTitle, {
-  CourseTitleProps,
-} from '@/components/courseCard/atoms/courseTitle';
-import CourseButtons, {
-  CourseButtonsProps,
-} from '@/components/courseCard/molecules/courseButtons';
+import CourseHeader, { CourseHeaderProps } from '../molecules/courseHeader';
+import CourseTitle, { CourseTitleProps } from '../atoms/courseTitle';
+import CourseButtons, { CourseButtonsProps } from '../molecules/courseButtons';
 
 export interface CourseCardBodyProps
   extends CourseHeaderProps,
