@@ -26,7 +26,7 @@ const CourseCard = ({
     overflow='hidden'
     display={{ base: 'block', sm: 'flex' }}
     background={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-    flexDirection={{ base: 'row', sm: 'column' }}
+    flexDirection={{ base: 'column', sm: 'row' }}
     mb={4}
   >
     <CourseImage imageSrc={imageSrc} imageAlt={imageAlt} />
