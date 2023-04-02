@@ -3,6 +3,6 @@ import React from 'react';
 export interface EventCardProps {
 }
 
-const EventCard = () => <div>eventCard</div>;
+const EventCard = () => <div>vercel github</div>;
 
 export default EventCard;
