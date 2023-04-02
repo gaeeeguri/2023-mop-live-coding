@@ -1,4 +1,4 @@
-import { ChakraProviderProps, extendTheme } from '@chakra-ui/react';
+import { extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
@@ -44,5 +44,5 @@ const config = {
   useSystemColorMode: true,
 };
 
-const theme: ChakraProviderProps = extendTheme({ config, styles, components, fonts, colors });
+const theme = extendTheme({ config, styles, components, fonts, colors });
 export default theme;
