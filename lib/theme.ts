@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import {ChakraProviderProps, extendTheme} from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
@@ -6,14 +6,6 @@ const styles = {
     body: {
       bg: mode('#f0e7db', '#202023')(props),
     },
-    // breakpoints: {
-    //   sm: '30em', // 480px
-    //   mm: '38em',
-    //   md: '48em', // 768px
-    //   lg: '62em', // 992px
-    //   xl: '80em', // 1280px
-    //   '2xl': '96em', // 1536px},
-    // },
   }),
 };
 
@@ -52,5 +44,5 @@ const config = {
   useSystemColorMode: true,
 };
 
-const theme = extendTheme({ config, styles, components, fonts, colors });
+const theme: ChakraProviderProps = extendTheme({ config, styles, components, fonts, colors });
 export default theme;
