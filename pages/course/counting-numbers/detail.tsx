@@ -30,6 +30,12 @@ const ReactCourseDetail = () => {
       slideLink:
         'https://docs.google.com/presentation/d/1nFDkOgTCmC9f3h6Wy4rjkUg4LuXlZmS73oB6jckR0qU/edit?usp=sharing',
     },
+    {
+      date: '04.26',
+      topic: 'React로 장바구니 만들기 2 - 상태 관리',
+      codeLink: 'https://github.com/mop-gist/counting-numbers-shopping-list/tree/state',
+      slideLink: 'https://docs.google.com/presentation/d/13RDZz_XiRPmKnBzIg33w2N2uW2C_5NRxXqyM-6XNIi4/edit?usp=sharing',
+    },
   ];
 
   return (
